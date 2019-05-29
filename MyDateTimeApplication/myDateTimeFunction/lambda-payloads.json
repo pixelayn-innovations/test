@@ -1,0 +1,27 @@
+{
+    "myDateTimeFunction": {
+        "lambda": {
+            "option": "date",
+            "period": "today"
+        },
+        "apigateway": {
+            "path": "/",
+            "method": {
+                "value": "POST",
+                "items": [
+                    "GET",
+                    "POST",
+                    "PUT",
+                    "DELETE",
+                    "HEAD",
+                    "OPTIONS",
+                    "PATCH"
+                ]
+            },
+            "body": {
+                "option": "date",
+                "period": "today"
+            }
+        }
+    }
+}
